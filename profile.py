@@ -125,7 +125,8 @@ for i in range(params.nodeCount):
         pass
     
     if params.toolVersion != "Do not install tools":
-        node.addService(pg.Execute(shell="bash", command="sudo bash -c \"source /local/repository/post-boot.sh " + params.toolVersion + " >> /local/repository/output_log.txt\""))
+        # node.addService(pg.Execute(shell="bash", command="sudo bash -c \"source /local/repository/post-boot.sh " + params.toolVersion + " >> /local/repository/output_log.txt\""))
+        node.addService(pg.Execute(shell="bash", command="sudo bash -c \"source /local/repository/post-boot.sh " + params.toolVersion + " |tee /local/repository/output_log.txt\""))
         pass 
     pass
 pc.printRequestRSpec(request)
