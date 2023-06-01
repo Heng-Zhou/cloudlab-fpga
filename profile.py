@@ -32,7 +32,8 @@ imageList = [
     #('urn:publicid:IDN+emulab.net+image+emulab-ops//CENTOS8-64-STD', 'CENTOS 8.4'),
     ('urn:publicid:IDN+emulab.net+image+emulab-ops//CENTOS7-64-STD', 'CENTOS 7.9')] 
 
-toolVersion = [#('2022.1'),
+toolVersion = [('2022.2'),
+               #('2022.1'),
                ('2021.1'), 
                ('2020.2.1'), 
                ('2020.2'), 
