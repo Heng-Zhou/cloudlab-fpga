@@ -68,7 +68,7 @@ check_xrt() {
 }
 
 check_requested_shell() {
-    if [[ "$TOOLVERSION" == "2022.1" ]]; then 
+    if [[ "$TOOLVERSION" == "2022.1" ]] || [[ "$TOOLVERSION" == "2022.2" ]]; then 
         SHELL_INSTALL_INFO=`/opt/xilinx/xrt/bin/xbmgmt examine | grep "$DSA"`
     else
         SHELL_INSTALL_INFO=`/opt/xilinx/xrt/bin/xbmgmt flash --scan | grep "$DSA"`
@@ -76,7 +76,7 @@ check_requested_shell() {
 }
 
 check_factory_shell() {
-    if [[ "$TOOLVERSION" == "2022.1" ]]; then   
+    if [[ "$TOOLVERSION" == "2022.1" ]] || [[ "$TOOLVERSION" == "2022.2" ]]; then   
         SHELL_INSTALL_INFO=`/opt/xilinx/xrt/bin/xbmgmt examine | grep "$FACTORY_SHELL"`
     else
         SHELL_INSTALL_INFO=`/opt/xilinx/xrt/bin/xbmgmt flash --scan | grep "$FACTORY_SHELL"`
@@ -110,8 +110,8 @@ install_u280_shell() {
 
 flash_card() {
     echo "Flash Card(s). "
-    if [[ "$TOOLVERSION" == "2022.1" ]]; then
-        /opt/xilinx/xrt/bin/xbmgmt program --base --device 0000:3b:00.0
+    if [[ "$TOOLVERSION" == "2022.1" ]] || [[ "$TOOLVERSION" == "2022.2" ]]; then
+        #/opt/xilinx/xrt/bin/xbmgmt program --base --device 0000:3b:00.0
     else
         /opt/xilinx/xrt/bin/xbmgmt flash --update --shell $DSA --force
     fi
