@@ -1,7 +1,8 @@
-"""Configure FPGA nodes using a post-boot script.
+"""Ubuntu 22.04 + Xilinx 2022.2 + GUI, For both deployment and development.
 
 Instructions:
 Because OS and Xilinx tools are all set up, just "Select Image" => "My disk image" and "Tool Version" => "Do not install tools".
+
 Follow NERC VM User Guide to start GUI through VNC.
 """
 
