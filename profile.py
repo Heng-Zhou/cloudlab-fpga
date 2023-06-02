@@ -1,7 +1,8 @@
 """Configure FPGA nodes using a post-boot script.
 
 Instructions:
-N/A yet.
+Because OS and Xilinx tools are all set up, just "Select Image" => "My disk image" and "Tool Version" => "Do not install tools".
+Follow NERC VM User Guide to start GUI through VNC.
 """
 
 # Import the Portal object.
