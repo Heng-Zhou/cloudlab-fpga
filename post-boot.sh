@@ -203,7 +203,14 @@ if [ ! -f ~/boot_flag ]; then
         echo "FPGA shell could not be verified."
         exit 1
     fi
+    echo "Installing remote desktop software"
+    apt install -y ubuntu-gnome-desktop
+    echo "Installed gnome desktop"
+    systemctl set-default multi-user.target
+    apt install -y tigervnc-standalone-server
+    echo "Installed vnc server"
     echo "Done running startup script."
+    # follow https://askubuntu.com/questions/1375111/vncserver-exited-too-early to start GUI    
     exit 0
 else
     echo "Rebooted the node."
