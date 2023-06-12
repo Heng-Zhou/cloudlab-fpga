@@ -107,7 +107,7 @@ for i in range(params.nodeCount):
     name = "node" + str(i)
     node = request.RawPC(name)
     # Assign to a node on cloudlab.umass.edu
-    node.component_id = "urn:publicid:IDN+emulab.net+node+pc156"
+    node.component_id = "urn:publicid:IDN+cloudlab.umass.edu+node+pc156"
     node.disk_image = params.osImage
     # Assign to the node hosting the FPGA.
     node.hardware_type = "fpga-alveo"
