@@ -106,12 +106,12 @@ for i in range(params.nodeCount):
     # Create a node and add it to the request
     name = "node" + str(i)
     node = request.RawPC(name)
-    # Assign to a node on cloudlab.umass.edu
-    node.component_id = "urn:publicid:IDN+cloudlab.umass.edu+node+pc156"
     node.disk_image = params.osImage
     # Assign to the node hosting the FPGA.
     node.hardware_type = "fpga-alveo"
     node.component_manager_id = "urn:publicid:IDN+cloudlab.umass.edu+authority+cm"
+    # Assign to node pc156 on UMAss
+    node.component_id = "urn:publicid:IDN+cloudlab.umass.edu+node+pc156"
     
     if params.nodeCount > 1 and params.enable40ginterface == True:
         iface = node.addInterface("enp134s0f0")
