@@ -28,12 +28,13 @@ pc.defineParameter("nodeCount", "Number of Nodes", portal.ParameterType.INTEGER,
 # Pick your image.
 imageList = [
     ('urn:publicid:IDN+cloudlab.umass.edu+image+octfpga-PG0:oct-u280-zh-image2', 'My disk image'),
-    ('urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU22-64-STD', 'UBUNTU 22.04')
+    ('urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU22-64-STD', 'UBUNTU 22.04'),
     #('urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD', 'UBUNTU 20.04'),    
     #('urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU18-64-STD', 'UBUNTU 18.04'), 
     #('urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU16-64-STD', 'UBUNTU 16.04'),
     #('urn:publicid:IDN+emulab.net+image+emulab-ops//CENTOS8-64-STD', 'CENTOS 8.4'),
-    #('urn:publicid:IDN+emulab.net+image+emulab-ops//CENTOS7-64-STD', 'CENTOS 7.9')] 
+    #('urn:publicid:IDN+emulab.net+image+emulab-ops//CENTOS7-64-STD', 'CENTOS 7.9')
+] 
 
 toolVersion = [('2023.1'),
                #('2022.2'),
@@ -43,7 +44,8 @@ toolVersion = [('2023.1'),
                #('2020.2'), 
                #('2020.1.1'),
                ('2020.1'),
-               ('Do not install tools')]      
+               ('Do not install tools')
+              ]      
                    
 pc.defineParameter("toolVersion", "Tool Version",
                    portal.ParameterType.STRING,
