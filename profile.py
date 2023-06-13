@@ -1,4 +1,4 @@
-"""Ubuntu 22.04 + Xilinx 2022.2 + GUI, for both deployment and development.
+"""Ubuntu 22.04 + Xilinx 2023.1 + GUI, for both deployment and development.
 
 Instructions:
 Because OS and Xilinx tools are both set up, just "Select Image" => "My disk image" and "Tool Version" => "Do not install tools".
