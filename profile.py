@@ -1,4 +1,4 @@
-"""Ubuntu 22.04 + Xilinx 2023.1 + GUI, for both deployment and development.
+"""Configure FPGA nodes using a post-boot script.
 
 Instructions:
 Because OS and Xilinx tools are both set up, just "Select Image" => "My disk image" and "Tool Version" => "Do not install tools".
