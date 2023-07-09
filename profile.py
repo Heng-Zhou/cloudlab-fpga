@@ -27,7 +27,7 @@ pc.defineParameter("nodeCount", "Number of Nodes", portal.ParameterType.INTEGER,
 
 # Pick your image.
 imageList = [
-    ('urn:publicid:IDN+cloudlab.umass.edu+image+octfpga-PG0:oct-u280-zh-image', 'My disk image'),
+    ('urn:publicid:IDN+cloudlab.umass.edu+image+octfpga-PG0:oct-u280-zh-image1', 'My disk image'),
     #('urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU22-64-STD', 'UBUNTU 22.04'),
     #('urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD', 'UBUNTU 20.04'),    
     ('urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU18-64-STD', 'UBUNTU 18.04'), 
